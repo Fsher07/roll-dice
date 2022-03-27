@@ -7,7 +7,6 @@ function getDeger(button){
        document.getElementsByClassName("row")[(parseInt(button.getAttribute("data-tip"))-1)]
        .style.backgroundColor = "blue";
        console.log(guess1);
-        
 }
 
 function getDeger2(button){
@@ -16,14 +15,13 @@ function getDeger2(button){
     this.guess2 = guess2;
     document.getElementsByClassName("row2")[(parseInt(button.getAttribute("data-tip"))-1)].style.backgroundColor = "blue";
     console.log(guess2);
-
 }
 
 
 
-function resim_ekle() { 
-    document.getElementById("trollaciklama").innerHTML = "Not Today !";
-    document.getElementById("resim").innerHTML = "<img src='ohNo.jpg'>"; 
+function addImage() { 
+    document.getElementById("explanation").innerHTML = "Not Today !";
+    document.getElementById("image").innerHTML = "<img src='ohNo.jpg'>"; 
 }
 
 function rollDice(element){
@@ -49,40 +47,29 @@ function rollDice(element){
    
     
     if (guess1 == guess2){
-        let x = Boolean(guess1 == array[0]);
-        let y = Boolean(guess1 == array[1]);
+			let x = Boolean(guess1 == array[0]);
+			let y = Boolean(guess1 == array[1]);
 
-        
-        
-        if(x && y ){
-            console.log("tombila");
+			
+			
+			if(x && y ){
+					console.log("tombila");
 
-        }else if(x || y){
-            console.log("was very close!!");
+			} else if(x || y){
+					console.log("was very close!!");
 
-        }else console.log("god dam it ");
+			} else console.log("god dam it ");
     }
 
-    if(guess1 != guess2){
+    if (guess1 != guess2){
         
-         if(a  && b  ){
+      if(a  && b  ){
     
-            console.log("Tombala !");
+        console.log("Tombala !");
         
-        }else if(a  || b ){
-        
-            console.log("was close !");
-            
-        }else resim_ekle(element);
-    
+      } else if (a  || b ) {
+          console.log("was close !"); 
 
-
-
-
+      } else addImage(element);
     }
-    
-      
-   
-        
-
-    } 
+} 

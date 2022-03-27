@@ -6,6 +6,8 @@ button{
     height: 50px;
     border: 0;
     border-radius: 5px;
+    background-color: black;
+    color: red;
 }
 .asd{
     display: flex;
