@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="zarAtma.js"></script>
-        <title>
-            Rolling Dice with Animation
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <style></style>
-       
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>
+			Rolling Dice with Animation
+	</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="rollingDice.js"></script>
 </head>
 <body>
-    
-    <div class="header" >
-        <h1>
-           
-            
-        </h1>
-    </div>
+	<div class="header" >
+			<h1>
+					
+					
+			</h1>
+	</div>
 
-    <hr>
-    <div class="container">
-    <p id = "paragraph">First Guess</p>
-        
-        <button class = "row" data-tip="1"  onclick = "getDeger(this)">1</button>
-        <button class = "row" data-tip="2"  onclick = "getDeger(this)">2</button>
-        <button class = "row" data-tip="3"  onclick = "getDeger(this)">3</button>
-        <button class = "row" data-tip="4"  onclick = "getDeger(this)">4</button>
-        <button class = "row" data-tip="5"  onclick = "getDeger(this)">5</button>
-        <button class = "row" data-tip="6"  onclick = "getDeger(this)">6</button>
-      
-    <p id = "paragraph">Second Guess</p>
-        
-        <button class = "row2" data-tip="1"   onclick = "getDeger2(this)">1</button>
-        <button class = "row2" data-tip="2"   onclick = "getDeger2(this)">2</button>
-        <button class = "row2" data-tip="3"   onclick = "getDeger2(this)">3</button>
-        <button class = "row2" data-tip="4"   onclick = "getDeger2(this)">4</button>
-        <button class = "row2" data-tip="5"   onclick = "getDeger2(this)">5</button>
-        <button class = "row2" data-tip="6"   onclick = "getDeger2(this)">6</button>
-      
-    </div>
-    <button class = "asd" onclick = rollDice(this)>Roll Dice</button>
-    <div class="para"><p id = "rolling"></p></div>
-    <div id = "dice_place1"></div>
-    <div id = "dice_place2"></div>
-    <div style = "font-size: 40px" id = "trollaciklama"></div>
-    <div onload="resim_ekle(this);">
-        <span id="resim"></span> 
-    </div>
-    <div id = "trollface"></div>
-
-    
+	<hr>
+	<div class="container">
+	<p id = "paragraph">First Guess</p>
+			
+			<button class = "row" data-tip="1">1</button>
+			<button class = "row" data-tip="2">2</button>
+			<button class = "row" data-tip="3">3</button>
+			<button class = "row" data-tip="4">4</button>
+			<button class = "row" data-tip="5">5</button>
+			<button class = "row" data-tip="6">6</button>
+		
+	<p id = "paragraph">Second Guess</p>
+			
+			<button class = "row2" data-tip="1">1</button>
+			<button class = "row2" data-tip="2">2</button>
+			<button class = "row2" data-tip="3">3</button>
+			<button class = "row2" data-tip="4">4</button>
+			<button class = "row2" data-tip="5">5</button>
+			<button class = "row2" data-tip="6">6</button>
+		
+	</div>
+	<button class = "asd" onclick = rollDice(this)>Roll Dice</button>
+	<div class="para"><p id = "rolling"></p></div>
+	<div id = "dice_place1"></div>
+	<div id = "dice_place2"></div>
+	<div style = "font-size: 40px" id = "trollaciklama"></div>
+	<div onload="resim_ekle(this);">
+			<span id="resim"></span> 
+	</div>
+	<div id = "trollface"></div>
 </body>
 
 </html>
