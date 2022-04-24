@@ -1,6 +1,6 @@
+class game {
 
-
-function getDeger(button){
+ getDeger(button){
     
        var guess1 = parseInt(button.getAttribute("data-tip"));
        this.guess1 = guess1 ;
@@ -9,7 +9,7 @@ function getDeger(button){
        console.log(guess1);
 }
 
-function getDeger2(button){
+ getDeger2(button){
     
     var guess2 = parseInt(button.getAttribute("data-tip"));
     this.guess2 = guess2;
@@ -17,16 +17,13 @@ function getDeger2(button){
     console.log(guess2);
 }
 
-
-
-function addImage() { 
+ addImage() { 
     document.getElementById("explanation").innerHTML = "Not Today !";
     document.getElementById("image").innerHTML = "<img src='ohNo.jpg'>"; 
 }
 
-function rollDice(element){
+ rollDice(element){
     
-
     var random1 = Math.floor((Math.random()*6)+1);
     var random2 = Math.floor((Math.random()*6)+1);
 
@@ -73,3 +70,8 @@ function rollDice(element){
       } else addImage(element);
     }
 } 
+}
+
+const dices = document.querySelectorAll('.row');
+
+dices.addEventListener('click', game.getDeger(button));
